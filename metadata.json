@@ -1,0 +1,6 @@
+{
+  "name": "ድንቅነሽ (Dinkinesh) — Space Heritage Project",
+  "description": "An introductory home for the Dinkinesh project—preserving the stories of spacecraft left on the Moon and Mars across a Kids' Edition and Adults' Edition.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

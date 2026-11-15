@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque", "Noto Sans Ethiopic", system-ui, sans-serif;
+  --font-sans: "Manrope", "Noto Sans Ethiopic", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  :root {
+    --background: #0B0C0E;
+    --surface: #121418;
+    --border-hairline: rgba(237, 235, 230, 0.1);
+    --foreground: #EDEBE6;
+    --muted: #9A9892;
+    --accent: #C9A45C;
+  }
+
+  html {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    color-scheme: dark;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
